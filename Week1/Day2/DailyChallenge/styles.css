@@ -1,0 +1,83 @@
+nav{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    padding: 5px 100px 5px;
+    height: 80px;
+
+}
+nav img{
+    height: 80px;
+    width: 15%;
+}
+ul {
+    display:flex;
+    list-style-type: none;
+  }
+li {
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    font-size:1.25em
+  }
+  
+.main {
+    background-image:url("https://bit.ly/2OjDbKP"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.main div{
+    display:flex;
+    justify-content:flex-start;
+    font-size: 5em;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 250px;
+    padding-bottom: none;
+}
+p{
+    flex-wrap: wrap;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.25em;
+    width:75%;
+    padding:none;
+    color: white;
+}
+footer{
+    background-color: black;
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+} 
+a{
+          color: white;
+      }
+@media screen and (min-width:900px){
+    p, li {
+        font-size: 1.5em;
+    }
+    .main div{
+        font-size: 6.5em;
+    }
+}
+ @media screen and (min-width:1200px){
+    p, li {
+        font-size: 2em;
+    }
+    .main div{
+        font-size: 8em;
+    }
+    nav{
+        padding: 10px 100px 5px;
+        justify-content: flex-end;
+    }
+} 
+
+
+   
