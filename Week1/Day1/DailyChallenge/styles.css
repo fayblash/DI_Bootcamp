@@ -3,13 +3,18 @@ nav{
     display:flex;
     justify-content: flex-end;
     padding: 10px 100px 5px;
+    height: 100px;
 
 }
+nav img{
+    height: 100px;
+    width: 15%;
+}
 ul {
+    display:flex;
     list-style-type: none;
   }
-  li {
-    display: inline-block;
+li {
     color: white;
     float:right
     text-align: center;
@@ -25,14 +30,14 @@ ul {
     height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-items: center;
-
 }
 .main div{
+    display:flex;
+    justify-content:flex-start;
     font-size: 8em;
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 100px;
+    padding-top: 300px;
     padding-bottom: none;
 }
 p{
@@ -46,4 +51,14 @@ p{
 }
 footer{
     background-color: black;
-}
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+} 
+a{
+          color: white;
+      }
+
+
+   
