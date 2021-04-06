@@ -1,0 +1,29 @@
+.flex-container{
+    background-color: white;
+    width:1000px;
+    height:600px;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:none;
+
+}
+.flex-container div{
+    font-size: 4em;
+    color: white;
+    background-color: aqua;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.one, .three{
+    height: 100px;
+    width:100%;
+}
+.two{
+    height: 250px;
+    width:60%;
+}
