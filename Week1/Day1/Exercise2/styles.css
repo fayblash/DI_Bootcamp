@@ -30,7 +30,7 @@ body{
 }
 .coverText h1{
     color: white;
-    font-size: 3em;
+    font-size: 8em;
     font-weight: bold;
     text-align: center; 
     flex-wrap: wrap;
