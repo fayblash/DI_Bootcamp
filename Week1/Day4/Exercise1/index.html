@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script async defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Bootstrap Exercise 1</title>
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <span class="navbar-brand mb-0 h1">Project Exercise#9</span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact <span class="badge badge-light badge-pill ">3</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <label for="exampleInputEmail1"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email">
+
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only"></label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-success mb-2">Sign In</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="p-5 bg-light">
+        <h1 class="mb-3">Hello, World!</h1>
+        <h5 class="mb-3">This is Exercise #9. It includes a large callout called a Jumbotron and three supporting pieces
+            of content.</h5>
+        <a class="btn btn-primary" href="" role="button">Learn More</a>
+    </div>
+    <!-- Jumbotron -->
+    <div class="alert alert-danger" role="alert">
+        Warning! Danger!
+      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam neque ducimus sapiente
+                    assumenda unde, nobis beatae quos atque porro nesciunt dicta tempora quidem tempore dolorem? Velit
+                    quia similique at. </p>
+                <button type="button" class="btn btn-outline-dark"><i class="fas fa-chart-bar"></i> View Details</button>
+            </div>
+            <div class="col-md">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam neque ducimus sapiente
+                    assumenda unde, nobis beatae quos atque porro nesciunt dicta tempora quidem tempore dolorem? Velit
+                    quia similique at. </p>
+                <button type="button" class="btn btn-outline-dark"><i class="fas fa-mobile-alt"></i> View Details</button>
+            </div>
+            <div class="col-md">
+               <!-- <h3>Heading</h3><button type="button" class="btn btn-lg btn-primary" disabled>New</button> -->
+               <h3>Heading <span class="badge badge-info">New</span></h3> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam neque ducimus sapiente
+                    assumenda unde, nobis beatae quos atque porro nesciunt dicta tempora quidem tempore dolorem? Velit
+                    quia similique at. </p>
+                <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i> View Details</button>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
