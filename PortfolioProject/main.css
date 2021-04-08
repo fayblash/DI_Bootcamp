@@ -1,0 +1,77 @@
+body{
+    font-family: "Raleway";
+}
+.main{
+    background-image:url("https://bit.ly/3uw956n") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+
+nav {
+    background-color: #58ABAE;
+    position: fixed;
+}
+nav a{
+    color:white !important;
+    font-size: 1.25em;
+}
+.about{
+    background-color: #A5CBC6;
+}
+
+.portfolio, .contact{
+    background-color: #FFD6D4;
+}
+
+.portfolioImg img{
+    width:400px;
+    height:250px;
+    margin: 10px;
+}
+.blog{
+    background-color: #A5CBC6;
+}
+
+.blogCards img{
+    height:200px;
+}
+.blogCards h5,a{
+    color:  #58ABAE;
+    text-decoration: none;
+}
+i{
+    color:#58ABAE;
+    font-size:2em;
+    margin:5px;
+}
+#copyright{
+    background-color: #58ABAE;
+    padding:5px;   
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #58ABAE;
+    opacity:0.7;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color:white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
