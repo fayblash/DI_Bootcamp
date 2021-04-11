@@ -3,8 +3,11 @@ let me = ["my","favorite","color","is","blue"]
 console.log(me.join());
 
 // Exercise2: Mixup
-str1="Ashira"
-str2="Blashka"
+let str1="Ashira"
+let str2="Blashka"
+str1New = str2.slice(0,2) + str1.slice(2);
+str2New = str1.slice(0,2) + str2.slice(2);
+console.log(str1New + " " + str2New);
 
 
 // Exercise 3: Calculator
