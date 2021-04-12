@@ -13,7 +13,7 @@ else{
 }
 
 //Exercise 2
-let newDog = "Chihuahua";
+let newDog = prompt("Enter the breed of your dog: ");
 
 //check and display length
 console.log(newDog.length);
