@@ -3,13 +3,13 @@ let x = 15;
 let y = 21;
 
 if (x > y) {
-console.log("x is the bigger number");
+alert("x is the bigger number");
 }
 else if  (x < y) {
-    console.log("y is the bigger number");
+    alert("y is the bigger number");
 }
 else{
-    console.log("x and y are equal");
+    alert("x and y are equal");
 }
 
 //Exercise 2
@@ -24,20 +24,20 @@ console.log(newDog.toLowerCase());
 
 //if else statment
 if (newDog === "Chihuahua"){
-    console.log("I love Chihuahuas, it's my favorite dog breed.");
+    alert("I love Chihuahuas, it's my favorite dog breed.");
 }
 else{
-    console.log("I don't care, I prefer cats.");
+    alert("I love Chihuahuas, it's my favorite dog breed.");
 }
 
 //Exercise 3
 let num = +prompt("Please enter a number: ");
 
 if (num%2 == 0){
-    console.log(`${num} is an even number.`)
+    alert(`${num} is an even number.`)
 }
 else{
-    console.log(`${num} is an odd number`)
+    alert(`${num} is an odd number`)
 }
 
 //Exercise 4
@@ -77,14 +77,15 @@ else{
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
 
 if (users.length === 0){
-    console.log ("no one is online");
+    alert("no one is online");
+    
 }
 else if (users.length === 1){
-    console.log (`${users[0]} is online`);
+    alert(`${users[0]} is online`);
 }
 else if (users.length === 2){
-    console.log (`${users[0]} and ${users[1]} are online`);
+    alert(`${users[0]} and ${users[1]} are online`);
 }
 else {
-    console.log (`${users[0]} and ${users[1]} and ${users.length - 2} more are online`);
+    alert(`${users[0]} and ${users[1]} and ${users.length - 2} more are online`);
 }

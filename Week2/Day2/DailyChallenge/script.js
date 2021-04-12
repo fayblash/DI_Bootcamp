@@ -21,15 +21,17 @@
 // }
 
 //Second attempt - just using string and substrings
-let sentence = "This smoothie is bad, I like the flavors."
+let sentence = "This smoothie is not that bad, I like the flavors."
 
 let wordNot = sentence.indexOf("not");
 let wordBad = sentence.indexOf("bad");
 
 if (wordNot >=0 && wordNot < wordBad){
 
-    console.log(sentence.substring(0, wordNot) + "good" + sentence.substring(wordBad+3));
+    // console.log(sentence.substring(0, wordNot) + "good" + sentence.substring(wordBad+3));
+    alert(sentence.substring(0, wordNot) + "good" + sentence.substring(wordBad+3));
 }
 else {
-    console.log(sentence);
+    // console.log(sentence);
+    alert(sentence);
 }
