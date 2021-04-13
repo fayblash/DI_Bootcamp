@@ -10,7 +10,8 @@ let joinString = numbers.join(" ");
 // Bonus : To do this Bonus look up how to work with nested for loops
 // Sort the numbers array in descending order, do so using for loops (Not using built-in sort methods).
 
-for (let i = 0; i < numbers.length; i++){
+for (let loop = 0; loop < numbers.length; loop++){
+    for (let i = 0; i< numbers.length; i++){
     let temp = 0;
     if (numbers[i] < numbers[i+1]){
         temp = numbers[i];
@@ -18,6 +19,7 @@ for (let i = 0; i < numbers.length; i++){
         numbers[i+1]=temp;
     }
     console.log(numbers);
+}
 }
 
 // The output should be: [9,8,7,6,5,4,3,2,1,0]
