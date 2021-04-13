@@ -13,27 +13,12 @@ let joinString = numbers.join(" ");
 for (let i = 0; i < numbers.length; i++){
     let temp = 0;
     if (numbers[i] < numbers[i+1]){
-        temp = 
+        temp = numbers[i];
+        numbers[i] = numbers[i+1];
+        numbers[i+1]=temp;
     }
+    console.log(numbers);
 }
-
-
-
-
-
-
-
-
-// let len = numbers.length;
-// for (let i = 0; i < len; i++) {
-//     for (let j = 0; j < len; j++) {
-//         if (numbers[j] < numbers[j + 1]) {
-//             let tmp = numbers[j];
-//             numbers[j] = numbers[j + 1];
-//             numbers[j + 1] = tmp;
-//         }
-//     }
-// }
 
 // The output should be: [9,8,7,6,5,4,3,2,1,0]
 // Hint: The algorithm is called “Bubble Sort”

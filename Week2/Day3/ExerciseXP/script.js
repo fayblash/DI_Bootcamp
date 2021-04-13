@@ -7,13 +7,13 @@
 // }
 
 // //bonus
-let colors = ["aqua", "teal", "mint", "seafoam"];
-let ordinals = ["st", "nd", "rd", "th"];
+// let colors = ["aqua", "teal", "mint", "seafoam"];
+// let ordinals = ["st", "nd", "rd", "th"];
 
-let i;
-for (i=0; i < colors.length; i++) {
-    console.log(`My ${i+1}${ordinals[i]} choice is ${colors[i]}.`)
-}
+// let i;
+// for (i=0; i < colors.length; i++) {
+//     console.log(`My ${i+1}${ordinals[i]} choice is ${colors[i]}.`)
+// }
 
 // //Exercise 2: List of People
 // let people = ["Greg", "Mary", "Devon", "James"]
@@ -104,7 +104,7 @@ for (i=0; i < colors.length; i++) {
 // // Given the object above, console.log “my name is Rudolf the raindeer”
 // let x, str = "";
 // for (x in details){
-//     str = str + " " + x + " " + details[x];
+//     str += " " + x + " " + details[x];
 // }
 // console.log(str);
 
