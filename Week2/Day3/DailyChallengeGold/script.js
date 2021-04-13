@@ -1,5 +1,4 @@
-// let numbers = [5,0,9,1,7,4,2,6,3,8];
-let numbers = [6,1,9,3,0,5,4,7,8,2];
+let numbers = [5,0,9,1,7,4,2,6,3,8];
 // Using the .toString() method convert the array to a string.
 let numString = numbers.toString();
 // Using the .join()method convert the array to a string. Try passing different values into the join.
