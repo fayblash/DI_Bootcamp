@@ -1,5 +1,5 @@
-const numbers = [5,0,9,1,7,4,2,6,3,8];
-
+// let numbers = [5,0,9,1,7,4,2,6,3,8];
+let numbers = [6,1,9,3,0,5,4,7,8,2];
 // Using the .toString() method convert the array to a string.
 let numString = numbers.toString();
 // Using the .join()method convert the array to a string. Try passing different values into the join.
@@ -10,7 +10,7 @@ let joinString = numbers.join(" ");
 // Bonus : To do this Bonus look up how to work with nested for loops
 // Sort the numbers array in descending order, do so using for loops (Not using built-in sort methods).
 
-for (let loop = 0; loop < numbers.length; loop++){
+for (let loop = 1; loop < numbers.length; loop++){
     for (let i = 0; i< numbers.length; i++){
     let temp = 0;
     if (numbers[i] < numbers[i+1]){
