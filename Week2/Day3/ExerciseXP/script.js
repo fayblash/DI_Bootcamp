@@ -7,13 +7,13 @@
 // }
 
 // //bonus
-// let colors = ["aqua", "teal", "mint", "seafoam"];
-// let ordinals = ["1st", "2nd", "3rd", "4th"];
+let colors = ["aqua", "teal", "mint", "seafoam"];
+let ordinals = ["st", "nd", "rd", "th"];
 
-// let i;
-// for (i=0; i < colors.length; i++) {
-//     console.log(`My ${ordinals[i]} choice is ${colors[i].}`)
-// }
+let i;
+for (i=0; i < colors.length; i++) {
+    console.log(`My ${i+1}${ordinals[i]} choice is ${colors[i]}.`)
+}
 
 // //Exercise 2: List of People
 // let people = ["Greg", "Mary", "Devon", "James"]
