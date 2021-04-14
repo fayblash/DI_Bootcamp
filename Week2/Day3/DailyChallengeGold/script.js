@@ -17,9 +17,9 @@ for (let loop = 1; loop < numbers.length; loop++){
         numbers[i] = numbers[i+1];
         numbers[i+1]=temp;
     }
-    console.log(numbers);
+    
 }
-}
+}console.log(numbers);
 
 // The output should be: [9,8,7,6,5,4,3,2,1,0]
 // Hint: The algorithm is called “Bubble Sort”
