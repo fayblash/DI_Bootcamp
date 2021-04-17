@@ -1,5 +1,5 @@
 let startNum = +prompt("Enter a number from 1-99 to start the song:");
-let dropNum = startNum
+let dropNum = startNum;
 for (i=1; i<=dropNum; i++){
 console.log(`${dropNum} bottles of beer on the wall`);
 console.log(`${dropNum} bottles of beer`);
@@ -12,3 +12,4 @@ console.log(`${dropNum} bottles of beer`);
 dropNum-=i;
 console.log(`${dropNum} bottles of beer on the wall`);
 }
+console.log("Drink up!");
