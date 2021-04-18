@@ -1,0 +1,19 @@
+body{
+    margin: 50px;
+
+}
+.container{
+    margin-left:0px;
+    width:50%;
+}
+.number{
+    background-color: green;
+    color:white;
+}
+.operator{
+    background-color: orange;
+    color:white;
+}
+.btn{
+    border: white 1px solid;
+}
