@@ -21,32 +21,26 @@
 // selector.add(option);
 // // The newly added option should be selected by default.
 
-// // Exercise 2: Delete Colors
-// // Instructions
-// {/* <form>
-//     <select id="colorSelect">
-//         <option>Red</option>
-//         <option>Green</option>
-//         <option>White</option>
-//         <option>Black</option>
-//     </select>
-//     <input type="button" value="Select and Remove">
-// </form> */}
+// Exercise 2: Delete Colors
+// Instructions
+{/* <form>
+    <select id="colorSelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>White</option>
+        <option>Black</option>
+    </select>
+    <input type="button" value="Select and Remove">
+</form> */}
 
-// // Create a function called : removecolor() that removes the selected color from the dropdown list.
-// // function removeColor(){
-// // let select = document.querySelector("#colorSelect");
-// // select.remove(this.value);
-// // }
-// // let button = document.querySelector("button");
-// // button.addEventListener("click", removeColor);
-// function colorRemove() {
-//     let select = document.querySelector("#colorSelect");
-//     select.remove(select.selectedIndex);
-// }
+// Create a function called : removecolor() that removes the selected color from the dropdown list.
+function colorRemove() {
+    let select = document.querySelector("#colorSelect");
+    select.remove(select.selectedIndex);
+}
 
-// let btn = document.querySelector("#button");
-// btn.addEventListener("click",colorRemove);
+let btn = document.querySelector("#button");
+btn.addEventListener("click",colorRemove);
 
 // Exercise 3 : Create A Shopping List
 // Instructions
