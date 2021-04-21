@@ -6,7 +6,7 @@
 // Follow these steps :
 // Get the value of each of the inputs in the HTML file when the button is clicked.
 // Make sure the values are not empty
-let noun = document.querySelector("#noun");
+        let noun = document.querySelector("#noun");
         let adjective = document.querySelector("#adjective");
         let person = document.querySelector("#person");
         let verb = document.querySelector("#verb");

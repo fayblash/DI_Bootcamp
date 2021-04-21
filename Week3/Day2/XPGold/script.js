@@ -56,7 +56,6 @@ let form = document.createElement("form");
 
 let textInput = document.createElement("input"); //input element, text
 textInput.setAttribute('type',"text");
-textInput.setAttribute('name',"username");
 
 let button = document.createElement("button"); //input element, Submit button
 button.innerHTML = "Add Item";
