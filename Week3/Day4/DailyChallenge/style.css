@@ -1,0 +1,50 @@
+body{
+    display:flex;
+    justify-content: center;
+    font-family: Raleway;
+}
+.container {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    padding-bottom: 200px;
+}
+
+h3 {
+    color: white;
+    font-size: 2.5em;
+}
+
+#listTasks{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:60%;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+.newTask{
+    display:flex;
+    border-bottom:2px cadetblue solid;
+    align-items: center;
+}
+.fa-window-close{
+    color:cadetblue;
+    padding:5px;
+}
+#inputForm{
+    width:60%;
+    display:flex;
+}
+form input{
+    font-size: 1.5em;
+    flex-grow: 2;
+}
+.checkbox{
+    width:10px;
+    margin-right:10px;
+}

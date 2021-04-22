@@ -13,6 +13,7 @@
         let place = document.querySelector("#place");
         let story = document.querySelector("#story");
         let button = document.querySelector("#lib-button");
+        
 
         button.addEventListener("click",makeStory);
 
