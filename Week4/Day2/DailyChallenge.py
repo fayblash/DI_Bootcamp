@@ -1,5 +1,6 @@
 # Ask the user for their birthdate (specify the format, for example: DD/MM/YYYY).
 import calendar
+from datetime import datetime
 # Display a little cake as seen below:
 #        ___iiiii___
 #       |:H:a:p:p:y:|
@@ -16,11 +17,11 @@ import calendar
 birthday = input("Enter your birthday (mm/dd/yyyy): ")
 x = birthday.split('/')
 year = (x[2])
-print(year)
 
+# get current year
+currentyear = datetime.now().year
 # convert to age and get last digit of age
-age = 2021-int(year)
-print(age)
+age = currentyear-int(year)
 candles=str(age)[-1]
 
 # if age is multiple of 10, convert 0 to 10 to display 10 candles
