@@ -22,10 +22,11 @@ year = (x[2])
 currentyear = datetime.now().year
 # convert to age and get last digit of age
 age = currentyear-int(year)
-candles=str(age)[-1]
+# candles=str(age)[-1]
+candles=age%10
 
 # if age is multiple of 10, convert 0 to 10 to display 10 candles
-candles=int(candles)
+# candles=int(candles)
 if candles==0:
     candles=10
 
