@@ -16,7 +16,7 @@ from datetime import datetime
 # get birthdate and separate year
 birthday = input("Enter your birthday (mm/dd/yyyy): ")
 x = birthday.split('/')
-year = (x[2])
+year = x[2]
 
 # get current year
 currentyear = datetime.now().year
