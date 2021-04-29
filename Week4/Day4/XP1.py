@@ -83,8 +83,9 @@ def show_magicians(list):
 show_magicians(mag_names)    
 
 def make_great(list):
-    for i in range(len(list)):
-        list[i]+=" the Great"
-
+    # for i in range(len(list)):
+    #     list[i]+=" the Great"
+    for index,name in enumerate(list):
+        list[index] += " the great"
 make_great(mag_names)
 show_magicians(mag_names) 
