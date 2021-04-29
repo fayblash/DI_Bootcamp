@@ -13,5 +13,4 @@ print(list_a)
 print(list_b)
 print(*list_b, sep = ", ") 
 
-# list b=[word for word in list_a if ]
 

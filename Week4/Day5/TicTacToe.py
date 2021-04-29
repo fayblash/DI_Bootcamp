@@ -12,8 +12,7 @@ def displayBoard(board):
     print(board[1] + '|' + board[2] + '|' + board[3])
 
 def play_game():
-    userinput="Q"
-    
+    userinput="Q"    
     while userinput =="Q":
         userinput = input("Do you want to be X or O? ")
         if userinput=="X":
@@ -58,7 +57,6 @@ def play_game():
                     print(f"The computer put an {comp} in space {comp_move}")
                     flag=False 
                  
-
         if board[7] == board[8] == board[9] != ' ': 
             displayBoard(board)
             print(f"Game Over. {board[7]} won.")                               
