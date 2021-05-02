@@ -5,12 +5,11 @@
 
 # Then, the output should be:
 # bag,hello,without,world
-list_a=input("Enter a list of words separated by a comma (no spaces): ")
-list_a=list_a.split(",")
+# list_a=input("Enter a list of words separated by a comma (no spaces): ")
+# list_a=list_a.split(",")
 
-list_b=[word for word in sorted(list_a)]
-print(list_a)
-print(list_b)
-print(*list_b, sep = ", ") 
-
+# list_b=[word for word in sorted(list_a)]
+# print(list_a)
+# print(list_b)
+# print(*list_b, sep = ", ") 
 
