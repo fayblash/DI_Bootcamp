@@ -51,6 +51,7 @@ class Circle():
         else:
             return False
 # Be able to put them in a list and sort them
+    @staticmethod
     def printall(self):
         print(sorted(self.all_circles))
         
