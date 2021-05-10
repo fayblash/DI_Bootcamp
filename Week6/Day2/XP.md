@@ -119,6 +119,11 @@ from film
 join inventory on film.film_id=inventory.film_id 
 where film.film_id not in (inventory.film_id) 
 
+select film.title
+from film
+join inventory on film.film_id=inventory.film_id 
+where film.film_id not in (select film_id from inventory)
+
 <!-- Write a query to find which city is in which country. -->
 select city.city,country.country
 from city
