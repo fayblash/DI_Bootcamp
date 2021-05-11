@@ -1,0 +1,27 @@
+Fetch the last 2 customers in alphabetical order (A-Z) – exclude ‘id’ from the results.
+
+select first_name,last_name from customer order by last_name asc limit 2 offset 3
+
+Use SQL to delete all purchases made by Scott.
+
+DELETE FROM purchases 
+USING customer
+WHERE customer.cust_id = purchases.cust_id and where customer.first_name='Scott';
+
+Does Scott still exist in the customers table, even though he has been deleted? Try and find him.
+
+select * from customer where first_name='Scott'
+
+Use SQL to find all purchases. Join purchases with the customers table, so that Scott’s order will appear, although instead of the customer’s first and last name, you should only see empty/blank. (Which kind of join should you use?).
+
+SELECT customer.first_name,customer.last_name,items.name_item 
+FROM purchases 
+FULL OUTER JOIN customer ON purchases.cust_id = customer.cust_id
+FULL OUTER JOIN items ON purchases.item_id = items.item_id;
+
+Use SQL to find all purchases. Join purchases with the customers table, so that Scott’s order will NOT appear. (Which kind of join should you use?)
+
+SELECT customer.first_name,customer.last_name,items.name_item 
+FROM purchases 
+INNER JOIN customer ON purchases.cust_id = customer.cust_id
+INNER JOIN items ON purchases.item_id = items.item_id;
