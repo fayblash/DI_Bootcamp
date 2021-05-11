@@ -1,0 +1,80 @@
+Create 3 different tables, each one with a different relationship.
+Join them with all the types of PostgreSQL Joins you’ve learned.
+
+create table book(
+id serial primary key,
+title varchar(100),
+author_f varchar (50),
+author_l varchar(100),
+genre varchar (50)
+)
+
+create table borrower(
+id serial primary key,
+first_name varchar(50),
+last_name varchar (100),
+email varchar(50)
+)
+
+create table loan(
+id serial primary key,
+book_id smallint not null,
+borr_id smallint not null,
+date_taken date,
+loan_period smallint,
+returned boolean,
+foreign key (book_id) references book(id),
+foreign key (borr_id) references borrower(id)
+)
+
+insert into book (title,author_f,author_l,genre)
+values
+('The Help','Kathryn','Stockett','Historical Fiction'),
+('The Identicals','Elin','Hilderbrand','Chick Lit'),
+('A Tree Grows in Brooklyn','Betty','Smith','Coming of Age'),
+('Percy Jackson','Rick','Riordan','Youth Fantasy');
+
+insert into borrower(first_name,last_name,email)
+values
+('Fay','Blashka','fayblash@gmail.com'),
+('Noam','Gersten','noamgersten@gmail.com'),
+('Dina','Mann','dinamann@gmail.com'),
+('Sara','Gutman','sarag@gmail.com');
+
+insert into loan(book_id,borr_id,date_taken,loan_period,returned)
+values
+(1,3,'2021-05-01',14,true),
+(2,1,'2021-05-11',7,false),
+(4,2,'2021-01-09',7,false);
+
+print name and title of books that were borrowed
+
+select first_name,last_name,book.title from borrower
+inner join loan on loan.borr_id=borrower.id
+inner join book on book.id=loan.book_id
+
+print name and title of books that were borrowed and returned already
+
+select first_name,last_name,book.title from borrower
+inner join loan on loan.borr_id=borrower.id
+inner join book on book.id=loan.book_id
+where loan.returned=true
+
+print name and title of books that were borrowed and overdue
+
+select first_name,last_name,book.title from borrower
+inner join loan on loan.borr_id=borrower.id
+inner join book on book.id=loan.book_id
+where loan.returned=false and (loan.date_taken+loan.loan_period)<'2021-05-11'
+
+print name and title of books that were borrowed and  when they need to be returned
+
+select first_name,last_name,book.title, (loan.date_taken+loan.loan_period) as "return date" from borrower
+inner join loan on loan.borr_id=borrower.id
+inner join book on book.id=loan.book_id
+where loan.returned=false
+
+print title of books available to be borrowed
+
+select title from book
+where id not in (select book_id from loan)

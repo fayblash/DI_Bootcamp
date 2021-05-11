@@ -1,0 +1,62 @@
+Exercise 1 : DVD Rentals
+Instructions
+Get a list of all rentals which are out (have not been returned). How do we identify these films in the database?
+
+select title from film
+inner join inventory on inventory.film_id=film.film_id
+inner join rental on rental.inventory_id=inventory.inventory_id
+where rental.return_date is null
+
+Get a list of all customers who have not returned their rentals. Make sure to group your results.
+
+select first_name,last_name,count(*) as "number of outstanding rentals" from customer 
+inner join rental on rental.customer_id=customer.customer_id
+where rental.return_date is null
+group by first_name,last_name
+
+Get a list of all the Action films with Joe Swank.
+Before you start, could there be a shortcut to getting this information? Maybe a view?
+
+select title from film
+inner join film_category on film.film_id=film_category.film_id
+inner join category on category.category_id=film_category.category_id
+inner join film_actor on film_actor.film_id=film.film_id
+inner join actor on actor.actor_id=film_actor.actor_id
+where category.name='Action' and actor.first_name='Joe' and actor.last_name='Swank'
+
+Exercise 2 – Happy Halloween
+Instructions
+There is a zombie plague approaching! The DVD rental company is offering to lend all of its DVDs to the local shelters, so that the citizens can watch the movies together in the shelters until the zombies are destroyed by the armed forces. Prepare tables with the following data:
+
+How many stores there are, and in which city and country they are located.
+
+select city.city,country.country from store
+inner join address on address.address_id=store.address_id
+inner join city on city.city_id=address.city_id
+inner join country on country.country_id=city.country_id
+
+How many hours of viewing time there are in total in each store – in other words, the sum of the length of every inventory item in each store.
+
+
+Make sure to exclude any inventory items which are not yet returned. (Yes, even in the time of zombies there are people who do not return their DVDs)
+
+A list of all customers in the cities where the stores are located.
+
+select customer.first_name,customer.last_name from customer
+inner join address on address.address_id=customer.address_id
+where address.city_id=300 or address.city_id=576
+
+A list of all customers in the countries where the stores are located.
+
+select customer.first_name,customer.last_name,country.country from customer
+inner join address on address.address_id=customer.address_id
+inner join city on city.city_id=address.city_id
+inner join country on country.country_id=city.country_id
+where city.country_id=8 or city.country_id=20
+
+Some people will be frightened by watching scary movies while zombies walk the streets. Create a ‘safe list’ of all movies which do not include the ‘Horror’ category, or contain the words ‘beast’, ‘monster’, ‘ghost’, ‘dead’, ‘zombie’, or ‘undead’ in their titles or descriptions… Get the sum of their viewing time (length).
+Hint : use the CHECK contraint
+
+For both the ‘general’ and the ‘safe’ lists above, also calculate the time in hours and days (not just minutes).
+
+
