@@ -1,0 +1,15 @@
+Retrieve all films with a rating of G or PG, which are are not currently rented (they have been returned/have never been borrowed).
+
+select distinct title,inventory.inventory_id from film
+full outer join inventory on inventory.film_id=film.film_id
+full outer join rental on rental.inventory_id=inventory.inventory_id
+where (rating='G' or rating='PG') and (rental.return_date is not null or (rental.rental_id is null and inventory.inventory_id is not null))
+order by inventory.inventory_id asc
+
+Create a new table which will represent a waiting list for children’s movies. This will allow a child to add their name to the list until the DVD is available (has been returned). Once the child takes the DVD, their name should be removed from the waiting list (ideally using triggers, but we have not learned about them yet. Let’s assume that our Python program will manage this). Which table references should be included?
+
+
+
+Retrieve the number of people waiting for each children’s DVD. Test this by adding rows to the table that you created in question 2 above.
+
+
