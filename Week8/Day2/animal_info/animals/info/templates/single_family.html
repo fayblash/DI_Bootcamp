@@ -2,10 +2,10 @@
 
 {% block content %}
 <h1> hello from single family</h1>
-<ul>
-    <li>name: {{family.name}}</li> 
-    {% for animal in animals %}
-        <p>{{animal.name}} is part of the family</p>
+<p> name: {{family.name}}</p>    
+<ul>    
+{% for animal in animals %}
+<li>{{animal.name}} is part of the family</li>       
     {% endfor %}
-    </ul>
+</ul>    
 {% endblock %}

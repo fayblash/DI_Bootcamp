@@ -7,6 +7,8 @@
     <li>legs: {{animal.legs}}</li> 
     <li>speed: {{animal.speed}}</li> 
     <li>family: {{animal.family.name}}</li> 
+    <a class='btn btn-primary' href="{% url 'single_family' animal.family.id%}">Show Family Members</a>
     <hr>
 </ul>
+
 {% endblock %}

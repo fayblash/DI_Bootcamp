@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{category.name}} </h1>    
+<ul>    
+{% for gif in gifs %}
+<li>{{gif.title}}</li>
+<img src="{{gif.url}}" alt="{{gif.title}}" height="42" width="42">      
+    {% endfor %}
+</ul>    
+{% endblock %}
