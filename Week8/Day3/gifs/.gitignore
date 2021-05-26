@@ -5,7 +5,7 @@ family_project/
 animal_env/
 animal_venv/
 school_env/
-gif_env/
+gif_venv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
